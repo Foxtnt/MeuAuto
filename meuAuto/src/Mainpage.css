@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container Principal */
+body {
+  background-color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Seção do Meio */
+.meio {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+  padding: 2rem 1rem;
+  animation: fadeIn 0.6s ease-out;
+}
+
+.meio section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header da Seção */
+.secao-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+  animation: slideDown 0.6s ease-out;
+}
+
+.meio section h1 {
+  color: #c81010;
+  font-size: 2rem;
+  margin-bottom: 0;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+}
+
+.meio section h1::before {
+  content: '';
+  width: 4px;
+  height: 2rem;
+  background-color: #c81010;
+  border-radius: 2px;
+  margin-right: 1rem;
+}
+
+/* Botão Limpar Pesquisa */
+.btn-limpar-pesquisa {
+  padding: 0.7rem 1.3rem;
+  background: linear-gradient(135deg, #6c757d 0%, #5a6268 100%);
+  color: white;
+  border: none;
+  border-radius: 0.7rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 12px rgba(108, 117, 125, 0.3);
+}
+
+.btn-limpar-pesquisa:hover {
+  background: linear-gradient(135deg, #5a6268 0%, #495057 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 18px rgba(108, 117, 125, 0.4);
+}
+
+.btn-limpar-pesquisa:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 10px rgba(108, 117, 125, 0.3);
+}
+
+/* Resultado de Pesquisa */
+.resultado-pesquisa {
+  background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+  border-left: 4px solid #2196f3;
+  padding: 0.8rem 1rem;
+  border-radius: 0.5rem;
+  color: #0d47a1;
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  animation: slideIn 0.3s ease-out;
+}
+
+/* Sem Resultados */
+.sem-resultados {
+  text-align: center;
+  padding: 3rem 2rem;
+  color: #999;
+  font-size: 1.1rem;
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Grid de Cards */
+.meio section > div {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  animation: slideUp 0.8s ease-out;
+}
+footer{
+  width: 100%;
+}
+/* Footer */
+.footer {
+    display: flex;   
+    align-items:center;
+              /* tamanho da imagem dentro do menu */
+    height:5vw;
+    overflow: hidden;
+    object-fit: cover;
+    opacity: 0.8;
+    background-color: rgb(31, 31, 31);
+    box-shadow: 0 0 0 0.3rem rgba(0, 0, 0, 0.349);
+    padding-left: 1rem;
+}.footer img{
+  width: 90vw;
+  height: 80vw;
+  padding-bottom: 15rem;
+}
+
+
+
+.footer h3 {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-right: 1rem;
+  z-index: 1;
+}
+
+/* Animações */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+  .meio {
+    padding: 1.5rem 1rem;
+  }
+
+  .secao-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .meio section h1 {
+    font-size: 1.5rem;
+  }
+
+  .btn-nova-manutencao {
+    width: 100%;
+  }
+
+  .meio section > div {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+
+  .footer {
+    padding: 1rem;
+  }
+
+  .footer h3 {
+    font-size: 1rem;
+  }
+
+  .footer img {
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .meio {
+    padding: 1rem 0.5rem;
+  }
+
+  .meio section h1 {
+    font-size: 1.3rem;
+  }
+
+  .btn-nova-manutencao {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  .meio section > div {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .footer {
+    padding: 0.8rem;
+    min-height: 60px;
+  }
+
+  .footer h3 {
+    font-size: 0.9rem;
+  }
+
+  .footer img {
+    height: 35px;
+  }
+}

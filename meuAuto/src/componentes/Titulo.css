@@ -1,0 +1,195 @@
+/* Remover seletores globais que conflitam com App.css */
+
+.titulo {
+    width: 100%;
+}
+
+.topo__logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding-bottom: 1rem;
+}
+.texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.topo{
+    width: 100%;
+    background-color: #a00808; /* fallback color */
+}.topo__logo img{
+    width: 5rem;
+
+}.topo__logo h1{
+    color: white;
+}.topo p{
+    color: white;
+}
+.grupo__botao{
+    padding-right: 19rem;
+}
+
+.botao{
+    position: relative;
+    color: white;
+    background: linear-gradient(135deg, #f7fde3 0%, #e9d6cf 100%);
+    border: none;
+    width: 3rem;
+    height: 2rem;
+    clip-path: polygon(30% 0%, 100% 0%, 100% 100%, 30% 100%, 0% 50%);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0;
+}
+
+.botao::before {
+    content: 'Sair';
+    font-size: 0.8rem;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-30%, -50%);
+}
+
+.botao:hover {
+    background: linear-gradient(135deg, #bbdefb 0%, #f8a989 100%);
+    transform: translateX(-3px);
+}
+.menu {
+    background-color: rgba(32, 2, 2, 0.534);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+}.menu li{
+    display: flex;
+}.menu ul{
+    display: flex;
+    gap: 2rem;
+}
+.menu__grupo__bag{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+
+.menu a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+.menu__grupo__bag2{
+    display: none;
+}
+
+/* Responsividade Tablet */
+@media screen and (max-width: 768px) {
+  .topo__logo {
+    gap: 1rem;
+    padding-bottom: 0.8rem;
+  }
+
+  .topo__logo img {
+    width: 4rem;
+  }
+
+  .topo__logo h1 {
+    font-size: 1.5rem;
+  }
+
+  .topo p {
+    font-size: 0.9rem;
+  }
+
+  .grupo__botao {
+    padding-right: 2rem;
+  }
+
+  .menu ul {
+    gap: 1.5rem;
+  }
+
+  .menu a {
+    font-size: 0.95rem;
+  }
+}
+
+/* Responsividade Mobile */
+@media screen and (max-width: 480px) {
+  .titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .topo__logo {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .topo__logo img {
+    display: none;
+  }
+
+  .topo__logo h1 {
+    font-size: 1.3rem;
+  }
+
+  .topo p {
+    font-size: 0.85rem;
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+  }
+
+  .grupo__botao {
+    padding-right: 1rem;
+    order: -1;
+    align-self: flex-start;
+  }
+
+  .botao::before {
+    transform: translate(-25%, -50%);
+    font-size: 0.7rem;
+  }
+
+  .menu__grupo__bag {
+    display: none;
+  }
+
+  .menu__grupo__bag2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .menu__grupo__bag2 ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding: 0.5rem;
+  }
+
+  .menu li {
+    font-size: 0.85rem;
+  }
+
+  .menu a {
+    padding: 0.3rem 0.5rem;
+  }
+}
