@@ -58,10 +58,10 @@ Imagens reais da aplicação (pasta `meuAuto/imgs`):
 <img src="meuAuto/imgs/Screenshot_2.jpg" width="900"/>
 
 ### Registrar manutenção
-<img src="meuAuto/imgs/Screenshot_3.jpg" width="900"/>
+<img src="meuAuto/imgs/Screenshot_4.jpg" width="900"/>
 
 ### Pesquisa de manutenções
-<img src="meuAuto/imgs/Screenshot_4.jpg" width="900"/>
+<img src="meuAuto/imgs/Screenshot_3.jpg" width="900"/>
 
 ### Calculadora de consumo
 <img src="meuAuto/imgs/Screenshot_5.jpg" width="900"/>
