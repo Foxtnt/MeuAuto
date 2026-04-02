@@ -249,7 +249,8 @@ Documentação: [JSON Server](https://github.com/typicode/json-server)
 
 ## 👨‍💻 Autores
 
-**Bruno P. Corrêa da Silva** - <a href="https://github.com/Foxtnt"><img src="https://github.com/Foxtnt.png" width="45" height="45" alt="Foto de perfil do GitHub de Bruno P. Corrêa da Silva"></a>git push -u origin HEAD
+**Bruno P. Corrêa da Silva** - 
+<a href="https://github.com/Foxtnt"><img src="https://github.com/Foxtnt.png" width="45" height="45" alt="Foto de perfil do GitHub de Bruno P. Corrêa da Silva"></a>
 
  Projeto desenvolvido para fins educacionais
 
