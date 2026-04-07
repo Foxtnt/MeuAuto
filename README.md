@@ -252,7 +252,7 @@ Documentação: [JSON Server](https://github.com/typicode/json-server)
 **Bruno P. Corrêa da Silva** - 
 <a href="https://github.com/Foxtnt"><img src="https://github.com/Foxtnt.png" width="45" height="45" alt="Foto de perfil do GitHub de Bruno P. Corrêa da Silva"></a>
 
-**Lucas Cunha Rocha ✌️** - 
+**Lucas Cunha Rocha** - 
 <a href="https://github.com/lucasrochaexe"><img src="https://github.com/lucasrochaexe.png" width="45" height="45" alt="Foto de perfil do GitHub de Lucas Cunha Rocha"></a>
 
  Projeto desenvolvido para fins educacionais
